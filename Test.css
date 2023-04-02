@@ -3,6 +3,10 @@
     margin-bottom: 50px;
 }
 
+#Header {
+background-color: #000000;
+}
+
 .navbar-brand {
     font-size: 15px;
     margin-right: auto;
