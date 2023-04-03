@@ -1,7 +1,7 @@
 .container {
     margin-top: 30px;
     margin-bottom: 50px;
-    background-color: black
+    background-color: navy
 }
 
 #Header {
@@ -24,7 +24,7 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     text-align:center;
-    background-color: white
+    Text-Decoration: Green
 }
 h2 {
     text-align: center;
