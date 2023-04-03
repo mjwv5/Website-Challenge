@@ -1,0 +1,80 @@
+.container {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#Header {
+background-color: #000000;
+}
+
+.navbar-brand {
+    font-size: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col {
+    border-right: 1px solid black;
+    
+}
+
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+h2 {
+    text-align: center;
+    background: skyblue;
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+
+h3 {
+    text-align: center;
+    background: rgb(96, 206, 156);
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+
+h4 {
+    text-align: center;
+    background: rgb(247, 186, 122);
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+
+.list-group-item {
+    font-size: 16px;
+    font-family: cursive;
+}
+
+dd {
+    display: list-item;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 12px;
+
+}
+
+.text-center {
+    margin-top: 20px;
+}
