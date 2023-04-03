@@ -28,7 +28,7 @@ h1 {
 }
 h2 {
     text-align: center;
-    background: skyblue;
+    background: steelblue;
     color: black;
     margin-right: auto;
     margin-left: auto;
@@ -41,7 +41,7 @@ h2 {
 
 h3 {
     text-align: center;
-    background: rgb(96, 206, 156);
+    background: palevioletred;
     color: black;
     margin-right: auto;
     margin-left: auto;
@@ -54,7 +54,7 @@ h3 {
 
 h4 {
     text-align: center;
-    background: rgb(247, 186, 122);
+    background: darkslategray;
     color: black;
     margin-right: auto;
     margin-left: auto;
