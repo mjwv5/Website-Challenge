@@ -4,14 +4,15 @@
     background-color: black
 }
 
-#Header {
-background-color: #000000;
-}
+
 
 .navbar-brand {
     font-size: 15px;
     margin-right: auto;
     margin-left: auto;
+    background-color: black;
+    Text-Decoration: azure
+    
 }
 
 .col {
@@ -21,10 +22,10 @@ background-color: #000000;
 
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', monospace;
     font-weight: bold;
     text-align:center;
-    Text-Decoration: white
+    Text-Decoration: azure
 }
 h2 {
     text-align: center;
