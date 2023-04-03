@@ -1,6 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100vh;
+        animation: movingBackground 20s linear infinite;
+        background-size: 400% 400%;
+      }
+  
+      @keyframes movingBackground {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+  
+      h1 {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 48px;
+        color: white;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <title>Smoothie Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,13 +47,29 @@
   </head>
   <body>
 
+    <script>
+      // Set a moving gradient background
+      const colors = [
+        "#84fab0",
+        "#8fd3f4",
+        "#f093fb",
+        "#f5576c"
+      ];
+  
+      const gradient = colors.map((color, index) => {
+        const nextColor = colors[(index + 1) % colors.length];
+        return `linear-gradient(45deg, ${color}, ${nextColor})`;
+      }).join(", ");
+  
+      document.body.style.backgroundImage = gradient;
+    </script>
     <!--
       BOOTSTRAP NAV
       https://getbootstrap.com/docs/5.0/components/navbar/
     -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">WE ARE 100% ORGANIC / NON-GMO / VEGAN / GLUTEN-FREE / PEANUT-FREE / SOY-FREE / DAIRY-FREE </a>
+        <a class="navbar-brand" href="/"><center>WE ARE 100% ORGANIC / NON-GMO / VEGAN / GLUTEN-FREE / PEANUT-FREE / SOY-FREE / DAIRY-FREE</center></a>
       </div>
     </nav>
 
@@ -33,51 +85,51 @@
       <div class="container">
   <div class="row align-items-start">
     <div class="col">
-      <h2> SMOOTHIES</h2>
+      <h2><center>SMOOTHIES</center></h2>
       <ul class="list-group list-group-flush">
-  <li class="list-group-item">COCO VERDE
+  <li class="list-group-item">COCO VERDE $18
   <dd>kale, spinach, mango, banana, dates, coconut oil, coconut water</dd>
-  <li class="list-group-item">BRADLEY'S CB&J
+  <li class="list-group-item">BRADLEY'S CB&J $12
   <dd>strawberry, banana, cashew butter, dates, dragonfruit, house cashew milk</dd>
-  <li class="list-group-item">SUPERMAN
+  <li class="list-group-item">SUPERMAN $14
   <dd>blueberries, goji berries, banana, dates, dragonfruit, house almond milk</dd>
-  <li class="list-group-item">THE BLAZE
+  <li class="list-group-item">THE BLAZE $14
   <dd>strawberry, mango, banana, dates, ginger, cayenne, house cashew milk</dd>
-  <li class="list-group-item">TROPIC ENERGY
+  <li class="list-group-item">TROPIC ENERGY $16
   <dd>mango, banana, dates, dragonfruit, brewed guayasa</dd>
-  <li class="list-group-item">BASIL BOMB
+  <li class="list-group-item">BASIL BOMB $17
   <dd>strawberry, banana, basil, dates, house almond milk</dd>
-  <li class="list-group-item">BLENDED BREW
+  <li class="list-group-item">BLENDED BREW $17
   <dd>banana, cashew butter, cold brew coffee, cacao (optional)</dd>
-  <li class="list-group-item">CACAO MONSTER
+  <li class="list-group-item">CACAO MONSTER $15
   <dd>banana, cashew butter, cacao, house almond milk</dd>
 </ul>
     </div>
     <div class="col">
-      <h3> BOOSTERS</h3>
+      <h3><center>BOOSTERS</center></h3>
       <ul class="list-group list-group-flush">
   <li class="list-group-item">
     <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-    ACAI
+    ACAI $4
   </li>
   <li class="list-group-item">
       <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-      CHIA SEEDS</li>
+      CHIA SEEDS $3</li>
   <li class="list-group-item">
   <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-   HEMP PROTEIN</li>
+   HEMP PROTEIN $1</li>
    <li class="list-group-item">
     <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-    SPINACH</li>
+    SPINACH $2</li>
     <li class="list-group-item">
       <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-      KALE</li>
+      KALE $3</li>
       <li class="list-group-item">
         <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-        CACAO</li>
+        CACAO $3</li>
         <li class="list-group-item">
           <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-          ALOE VERA</li>
+          ALOE VERA $2</li>
           <div class="text-center">
             <img src="https://github.com/prof-rossetti/internet-technologies/blob/main/exercises/website-challenge/images/backgrounds/smoothies-bowls.jpg?raw=true" class="img-fluid" alt="...">
           </div>
@@ -85,21 +137,20 @@
 </ul>
     </div>
     <div class="col">
-      <h4> ACAI BOWLS & MORE</h4>
+      <h4><center>ACAI BOWLS & MORE</center></h4>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">ACAI SMOOTHIE BOWL
+        <li class="list-group-item">ACAI SMOOTHIE BOWL $15
         <dd>Pick any smoothie to use as the base for your bowl. Smoothie bowls come blended with acai and topped with fruit and our house granola</dd>
-        <li class="list-group-item">GLUTEN-FREE OATS BOWL
-        <dd>Oats soaked in our house cashew milk, served cold, choice of 2 toppings included</dd>
-        <li class="list-group-item">QUINOA BOWL
+        <li class="list-group-item">GLUTEN-FREE OATS BOWL $12
+        <dd>Oats soaked in our house cashew milk, served cold
         <dd>Quinoa cooked in our house cashew milk, served cold, choice of 2 toppings included</dd>
-        <li class="list-group-item">COMBINATION BOWL
+        <li class="list-group-item">COMBINATION BOWL $19
         <dd>Combination of oats and quinoa, served cold, coice of 2 toppings included</dd>
-        <li class="list-group-item">VANILLA CASHEW PARFAIT
+        <li class="list-group-item">VANILLA CASHEW PARFAIT $14
         <dd>A vegan take on Greek-style yogurt, loaded with probiotics and topped with berries and our house granola</dd>
-        <li class="list-group-item">CHIA SEED PUDDING
+        <li class="list-group-item">CHIA SEED PUDDING $14
         <dd>Available in Strawberry, Chocolate, Vanilla Goji, and Vanilla Matcha flavors</dd>
-        <li class="list-group-item">HOUSE GRANOLA
+        <li class="list-group-item">HOUSE GRANOLA $14
           <dd>You asked for it, so we've made our granola available in 16 oz containers</dd>
 
       </ul>
