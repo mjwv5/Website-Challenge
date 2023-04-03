@@ -1,16 +1,20 @@
 .container {
     margin-top: 30px;
     margin-bottom: 50px;
+    background-color: black;
+    color:white
 }
 
-#Header {
-background-color: #000000;
-}
+
 
 .navbar-brand {
     font-size: 15px;
     margin-right: auto;
     margin-left: auto;
+    background-color:azure;
+
+   
+    
 }
 
 .col {
@@ -22,10 +26,13 @@ background-color: #000000;
 h1 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    text-align:center;
+    color:white
+   
 }
 h2 {
     text-align: center;
-    background: skyblue;
+    background: steelblue;
     color: black;
     margin-right: auto;
     margin-left: auto;
@@ -38,7 +45,7 @@ h2 {
 
 h3 {
     text-align: center;
-    background: rgb(96, 206, 156);
+    background: palevioletred;
     color: black;
     margin-right: auto;
     margin-left: auto;
@@ -51,7 +58,7 @@ h3 {
 
 h4 {
     text-align: center;
-    background: rgb(247, 186, 122);
+    background: darkslategray;
     color: black;
     margin-right: auto;
     margin-left: auto;
@@ -72,6 +79,7 @@ dd {
     margin-left: 10px;
     margin-right: 20px;
     font-size: 12px;
+ 
 
 }
 
